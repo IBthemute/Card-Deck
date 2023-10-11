@@ -1,5 +1,5 @@
 public class Deck {
-    Card[] cards;
+    private Card[] cards;
     public Deck() {
         cards = new Card[52];
         for (int i = 0; i < 52;) {
@@ -27,5 +27,9 @@ public class Deck {
         for (int i = 0; i < cards.length; i++) {
             System.out.println(cards[i]);
         }
+    }
+
+    public Card getCard(int i) {
+        return cards[i];
     }
 }
